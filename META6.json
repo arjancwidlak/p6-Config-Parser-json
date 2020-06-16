@@ -1,7 +1,7 @@
 {
-  "name": "p6-Config-Parser-json",
+  "name": "Config::Parser::json",
   "description": "JSON parser for Config",
-  "version": "0.1",
+  "version": "1.0.0",
   "perl": "6.*",
   "authors": "Arjan Widlak <arjan@unitedknowledge.nl",
   "auth": "github:arjancwidlak",
@@ -17,10 +17,10 @@
   "provides": {
     "Config::Parser::json": "lib/Config/Parser/json.pm6"
   },
-  "license": "GPL|Artistic-2.0",
+  "license": ["GPL","Artistic-2.0"],
   "tags": [
     "config",
     "configuration"
   ],
-  "source-url": "https://github.com/arjancwidlak/p6-Config-Parser-json"
+  "source-url": "https://github.com/arjancwidlak/p6-Config-Parser-json.git"
 }

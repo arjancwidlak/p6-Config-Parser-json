@@ -27,3 +27,5 @@ is slurp("t/files/write.json"), slurp($filename), "Written config is correct";
 ok $config.write($filename, "Config::Parser::json"), "Write over non-empty file";
 
 is slurp("t/files/write.json"), slurp($filename), "Written config is still correct";
+
+done-testing;

@@ -27,3 +27,5 @@ subtest "Contents match after merging" => {
     is $config.get("between"), "b", "Got between";
     is $config.get("second"), {a => "a",c => "c"}, "Got second";
 }
+
+done-testing;
