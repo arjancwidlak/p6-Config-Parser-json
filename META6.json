@@ -15,7 +15,7 @@
     "Test::META"
   ],
   "provides": {
-    "Config::Parser::p6-Config-Parser-json": "lib/Config/Parser/p6-Config-Parser-json.pm6"
+    "Config::Parser::json": "lib/Config/Parser/json.pm6"
   },
   "license": "GPL|Artistic-2.0",
   "tags": [
