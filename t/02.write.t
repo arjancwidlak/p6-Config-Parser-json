@@ -11,7 +11,7 @@ plan 4;
 
 my $config = Config.new();
 
-$config.read({
+$config.=read({
     first => [
         a => "a",
         c => "c"
@@ -20,11 +20,11 @@ $config.read({
 
 my ($filename, $fh) = tempfile;
 
-ok $config.write($filename, "Config::Parser::json"), "Write succeeded";
+ok $config.write($filename.IO, Config::Parser::json), "Write succeeded";
 
 is slurp("t/files/write.json"), slurp($filename), "Written config is correct";
 
-ok $config.write($filename, "Config::Parser::json"), "Write over non-empty file";
+ok $config.write($filename.IO, Config::Parser::json), "Write over non-empty file";
 
 is slurp("t/files/write.json"), slurp($filename), "Written config is still correct";
 
