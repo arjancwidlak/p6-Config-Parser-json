@@ -11,7 +11,7 @@ plan 4;
 
 my $config = Config.new();
 
-ok $config.read("t/files/config.json"), "File reading throws no error";
+ok $config.=read("t/files/config.json"), "File reading throws no error";
 
 subtest "Contents match" => {
     plan 2;
@@ -19,7 +19,7 @@ subtest "Contents match" => {
     is $config.get("second"), {a => "a",c => "c"}, "Got second";
 };
 
-ok $config.read("t/files/merge.json"), "File merging throws no error";
+ok $config.=read("t/files/merge.json"), "File merging throws no error";
 
 subtest "Contents match after merging" => {
     plan 3;

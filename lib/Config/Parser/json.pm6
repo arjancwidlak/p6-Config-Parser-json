@@ -6,8 +6,8 @@ class Config::Parser::json is Config::Parser {
         from-json(slurp($path));
     }
 
-    method write( Str $path, Hash $config --> Bool ) {
-        $path.IO.spurt( to-json $config );
+    method write( IO::Path:D $path, Hash $config --> Bool ) {
+        $path.spurt( to-json $config );
         True;
     }
 }
