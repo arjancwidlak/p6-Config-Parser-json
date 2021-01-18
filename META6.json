@@ -6,8 +6,10 @@
   "authors": "Arjan Widlak <arjan@unitedknowledge.nl",
   "auth": "github:arjancwidlak",
   "depends": [
+    "Config::Parser",
+    "JSON::Fast",
     "Config",
-    "JSON::Fast"
+    "Config::Parser::json"
   ],
   "build-depends": [],
   "test-depends": [
@@ -17,7 +19,10 @@
   "provides": {
     "Config::Parser::json": "lib/Config/Parser/json.pm6"
   },
-  "license": ["GPL","Artistic-2.0"],
+  "license": [
+    "GPL",
+    "Artistic-2.0"
+  ],
   "tags": [
     "config",
     "configuration"
